@@ -1,0 +1,29 @@
+
+#helpBox{padding-top: 190px;box-sizing:border-box;
+width: 100%;height: 500px;background-color: #dddddf;}
+
+#helpBox>h2{margin: auto;
+color:#000; text-align:center;
+font-size:2rem; padding-bottom: 40px;box-sizing:border-box;}
+
+#helpBox>p{margin: auto;
+font-size:1rem; color:#000;
+text-align:center;}
+
+#helpBox>p>a{color:#014CFD;}
+#helpBox>p>a:hover{border-bottom:1px solid #014cfd;
+transition:all 300ms ease;}
+#helpBox>p>a:active{font-weight: bold;}
+
+
+
+/*pcfull*/
+ @media screen and (min-width:1366px) {}
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {}
+ /*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+}
+ /*mobile*/
+ @media screen and (max-width:480px){
+ }

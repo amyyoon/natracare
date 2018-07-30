@@ -1,0 +1,243 @@
+/*ethicBox*/
+
+html,body{height: 100%;}  
+#ethicBox{padding:7.32vw; box-sizing:border-box;
+margin:auto;
+width:100%; height: 600px; background-color: #F6F6F6;}
+#ethicArti>h2{line-height: 3px;}
+#ethicBox>ul{margin-top: 5.20vw;
+margin: auto;
+width: 60%; height: 180px;}
+#ethicBox>ul>li>a{display: block;}
+
+#ethicBox>ul>li:nth-child(1){
+  background-image: url('../../img/639633-200.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(2){
+  background-image: url('../../img/natural-food.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(3){
+  background-image: url('../../img/deciduous-tree.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(4){
+  background-image: url('../../img/11718-200.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(5){
+  background-image: url('../../img/panda-animal-icon-png-7.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(1):hover{
+  background-image: url('../../img/639633-200_a.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(2):hover{
+  background-image: url('../../img/natural-food_a.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(3):hover{
+  background-image: url('../../img/deciduous-tree_a.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(4):hover{
+  background-image: url('../../img/11718-200_a.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+#ethicBox>ul>li:nth-child(5):hover{
+  background-image: url('../../img/panda-animal-icon-png-7_a.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+}
+
+  /*full*/
+ @media screen and (min-width:1365px) {
+  #ethicArti{margin: auto;width: 41.66vw;}
+  #ethicBox{padding:7.32vw; box-sizing:border-box;
+  margin:auto;
+  width:100%; height: 600px; background-color: #F6F6F6;}
+
+  #ethicArti{margin: auto;width: 100%; height: 180px;
+  margin-top: 2.60vw ;}
+
+  #ethicArti>h2{margin: auto;
+width:20.83vw;height: 36px;
+text-align: center;
+color:#000; font-size:2rem;
+margin-bottom: 5.12vw; 
+text-transform: uppercase;line-height: 3px;}
+
+#ethicArti>p{
+margin: auto;
+width: 100%;height: 400px; text-align: center;
+color:#000; font-size: 1.5rem;}
+
+
+
+#ethicBox>ul>li>a{width: 100%;height: 100%;}
+#ethicBox>ul>li{
+  float:left;
+  width: calc(100% / 5); height: 100%;
+  background-image: url('../../img/main/bg_5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
+
+
+
+  /*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+ 
+  #ethicBox{padding:3vw; box-sizing:border-box;
+  margin:auto;
+  width:100%; height: 500px;}
+ #ethicArti{margin: auto;width: 41.66vw;}
+  #ethicArti{margin: auto;width: 100%; height: 180px;
+  margin-top: 2.60vw ;}
+
+#ethicArti>h2{margin: auto;
+width:30vw;height: 36px;
+text-align: center;
+color:#000; font-size:2rem;
+margin-bottom: 5.12vw; 
+text-transform: uppercase;line-height: 3px;}
+
+#ethicArti>p{
+margin: auto;
+width: 100%;height: 100px; text-align: center;
+color:#000; font-size: 1rem;}
+
+#ethicBox>ul{
+width: 80%; height: 180px;}
+
+#ethicBox>ul>li>a{width: 100%;height: 100%;}
+#ethicBox>ul>li{
+  float:left;
+  width: calc(100% / 5); height: 100%;
+  background-image: url('../../img/main/bg_5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
+
+
+
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+
+  #ethicArti{margin: auto;width: 41.66vw;}
+  #ethicBox{padding:1vw; box-sizing:border-box;
+  margin:auto;
+  width:100%; height: 450px;line-height: 3px;}
+
+  #ethicArti{margin: auto;width: 100%; height: 180px;
+  margin-top: 2.60vw ;}
+
+  #ethicArti>h2{margin: auto;
+  width:50vw;height: 36px;
+  text-align: center; 
+  color:#000; font-size:1.5rem;
+  margin-bottom: 10vw; 
+  text-transform: uppercase;}
+
+  #ethicArti>p{
+  margin: auto; padding-top: 70px; box-sizing:border-box;
+  width: 80%;height: 200px; text-align: center;
+  color:#000; font-size: 1rem;line-height: 20px}
+
+  #ethicBox>ul{margin-top: 10vw;
+  width: 80%; height: 100px;}
+
+  #ethicBox>ul>li>a{width: 100%;height: 100%;}
+  #ethicBox>ul>li{
+  float:left;
+  width: calc(100% / 5); height: 100%;
+  background-image: url('../../img/main/bg_5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
+  
+
+/*mobile*/
+ @media screen and (max-width:480px){
+ #ethicArti{margin: auto;width: 41.66vw;}
+  #ethicBox{padding:2vw; box-sizing:border-box;
+  margin:auto;
+  width:100%; height: 400px;}
+
+  #ethicArti{margin: auto;width: 100%; height: 180px;
+  margin-top: 2.60vw ;}
+
+  #ethicArti>h2{margin: auto;
+  width:50vw;height: 50px;
+  text-align: center; margin-top: 70px;
+  color:#000; font-size:1.5rem;
+  margin-bottom: 1vw; 
+  text-transform: uppercase;line-height: 3px;}
+
+  #ethicArti>p{
+  margin: auto;
+  width: 100%;height: 200px; text-align: center;
+  color:#000; font-size: 1rem;}
+
+  #ethicBox>ul{
+  width: 100%; height: 100px;}
+
+  #ethicBox>ul>li>a{width: 100%;height: 100%;}
+  #ethicBox>ul>li{
+  float:left;
+  width: calc(100% / 5); height: 100%;
+  background-image: url('../../img/main/bg_5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
+  
+  }

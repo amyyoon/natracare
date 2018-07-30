@@ -1,0 +1,170 @@
+
+/*newsBox*/
+
+html,body{height: 100%;}  
+
+
+
+.eventBox{margin:auto;
+width: 100%; height: 1200px; background-color: #F2F1ED;}
+.eventBox>h2{padding:70px 0px;
+box-sizing: border-box;
+margin-bottom: 00px;
+color:#000; text-align: center;
+font-size: 2rem; 
+text-transform: uppercase;letter-spacing:3px;}
+
+.eventBox>p{padding-top: 20px;box-sizing: border-box;
+width: 800px;height: 56px;
+color:#000; text-align: center; margin: auto;
+font-style: 1rem; text-transform: capitalize;
+}
+
+.eventBox>ul{padding-top:200px; box-sizing:border-box;
+margin:auto;width: 960px; height: 600px;}
+.eventBox>ul>li{
+  position:relative;
+  margin:auto;
+  float:left; margin-right: 30px;
+  width: 300px; height: 100%; background-color: #fff;}
+.eventBox>ul>li:last-child{margin-right: 0;}
+
+.eventBox>ul>li:nth-child(1){
+  background-image: url('../../../img/benefit1.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.eventBox>ul>li:nth-child(2){
+  background-image: url('../../../img/benefit2.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.eventBox>ul>li:nth-child(3){
+  background-image: url('../../../img/benefit3.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;}
+
+
+.eventBox>ul>li>span{position:absolute; bottom:0; z-index:50;
+text-align: center; box-sizing:border-box; padding-top: 1rem;
+width: 100%; height: 30%; background-color:rgba(255,255,255,0.8);}
+
+
+
+
+.eventBox>ul>li>a{position:absolute; top:0; left:0; z-index:100; 
+  font-weight: 500; 
+  display: block; width: 100%; height: 100%; transition:all 300ms ease;}
+
+.eventBox>ul>li>a>span{display: block;
+  position: absolute; left: 0; bottom: 0; padding-top: 1rem; padding-bottom: 1rem;
+  width: 100%; height:auto; background-color:rgba(255,255,255,0.8);
+  text-align: center; text-transform: capitalize; transition:all 300ms ease;}
+
+.eventBox>ul>li>a:hover,
+.eventBox>ul>li>a:focus{background-color:rgba(0,0,0,0.7);}
+
+.eventBox>ul>li>a:hover:after,
+.eventBox>ul>li>a:focus:after{content:"read more"; display: block;
+  text-transform: uppercase; color:#fff; width: 80%; height: 80%; 
+  text-align:center; line-height:400px;
+  border:1px solid #fff; position: absolute; top: 10%; left: 10%; z-index: 200; }
+.eventBox>ul>li>a:hover + span {display: none;}
+
+.eventBox>ul>li>a:hover>span,
+.eventBox>ul>li>a:focus>span{ height: 0; overflow: hidden; padding: 0;}
+
+
+/*.eventBox>ul>li:hover>a{background-color: rgba(0,0,0,0.7)}
+.eventBox>ul>li:after:hover{content=" "; display: block;
+width: 80%; height: 80%; border:1px solid #fff;}*/
+
+
+/*.eventBox>ul>li>a {
+display: block;
+color:#000; font-size: 0.8rem;
+text-align: center;
+width: 100%;height: 100%;}
+*/
+/*.eventBox>ul>li>a>div {width:100%; height: 70%;
+  margin-bottom: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+*/
+
+
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+
+
+.eventBox>ul{padding-top:200px; box-sizing:border-box;
+margin:auto;width: 70vw; height: 600px;}
+.eventBox>ul>li{
+  position:relative;
+  margin:auto;
+  float:left; margin-right: 30px;
+  width: 20vw; height: 100%; background-color: #fff;}
+  }
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+   .eventBox>h2{color:#000;padding:50px 0px;
+  font-size: 1.5rem; text-align:center;}
+  .eventBox>p{padding-top: 20px;box-sizing: border-box;
+  width: 80%;height: 56px;
+  color:#000; text-align: center; margin: auto;
+  font-style: 1rem; text-transform: capitalize;
+  }
+.eventBox{height: 1500px;}
+.eventBox>ul{padding-top:200px; box-sizing:border-box;
+margin:auto;width: 100%; height: 1500px;}
+.eventBox>ul>li{
+  position:relative;
+  margin:auto;
+  margin-bottom: 30px;
+  width: 100%; height: 400px; background-color: #fff;}
+  }
+
+/*mobile*/
+ @media screen and (max-width:480px){
+  .eventBox{padding:3vw; box-sizing:border-box;
+  margin:auto;width: 100%; height: 1100px; background-color: #F2F1ED;}
+  .eventBox>h2{color:#000;padding:50px 0px;
+  font-size: 1.5rem; text-align:center;
+  margin-top: 1vw;}
+  .eventBox>p{padding-top: 20px;box-sizing: border-box;
+  width: 80%;height: 56px;
+  color:#000; text-align: center; margin: auto;
+  font-style: 1rem; text-transform: capitalize;
+  }
+
+  .eventBox>ul{padding-top:80px;
+  margin:auto; width: 100%; height: auto;}
+  .eventBox>ul>li{margin:auto; 
+  width: 100%; height: 210px; background-color: #fff;
+  margin-bottom: 2%;}
+
+  .eventBox>ul>li>a:hover:after,
+  .eventBox>ul>li>a:focus:after{content:"read more"; display: block;
+  text-transform: uppercase; color:#fff; width: 80%; height: 80%; 
+  text-align:center; line-height:200px;
+  border:1px solid #fff; position: absolute; top: 10%; left: 10%; z-index: 200; }
+  .eventBox>ul>li>a:hover + span {display: none;}
+
+  .eventBox>ul>li>a {font:#000; font-size: 0.8rem;
+  text-align: center;
+  width: 100%;height: 100%;}
+  .eventBox>ul>li>div {width:100%; height: 70%;
+  background-image: url('../../img/main/Rectangle 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }

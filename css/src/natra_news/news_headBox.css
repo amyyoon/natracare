@@ -1,0 +1,179 @@
+/*news_headBox.css*/
+
+html,body{height: 100%;}  
+
+  /*full*/
+/* @media screen and (min-width:1365px),(min-width:768px) and (max-width:1365px) 
+ ,(min-width:481px) and (max-width:767px), (max-width:480px)*/
+
+#wrap{width: 100%; height: 100%; background-color: #ccc;}
+
+
+ 
+ 
+#headBox{padding-top:30px; box-sizing: border-box;
+  margin: auto; width:100%; height:1000px; 
+  background-image: url('../../../img/pexels-photo-37728.jpeg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-background-size: cover;
+  background-size: cover;}  
+
+
+
+h1{padding-top:2rem; box-sizing:border-box; 
+  margin:auto; width: 150px;
+  height: 130px;  
+  background-image: url('../../../img/logo (2).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;}
+
+
+h1>a{display: block;width: 100%;height: 100%;}
+
+
+#gnb{margin:auto; margin-top: -400px; width:924px; height: 180px;}
+#gnb>ul{width: 100%; height: 100%;}
+
+#gnb li{float:left; width: 130px; height: 50px; 
+ margin-right: 24px;}
+#gnb li:last-child {margin-right: 0;}
+#gnb li>a{width: 100%; height: 100%;
+  color:#fff; font-size: 1rem; text-align:center;
+  text-transform: uppercase;font-weight: 400;
+  line-height: 150%;}
+#gnb li>a:hover{color:#628ade;}
+#gnb li>ol{display: none;
+width: 120px;height: 20px; margin-top: 10px;}
+#gnb li>ol>li{width: 100%;height: 100%;}
+
+#gnb li>ol>li>a{width: 120px;height: 40px; color:#fff; font-size:0.7rem; font-weight:lighter;
+  text-align:center; text-transform:uppercase;}
+
+
+#headBox>p{margin-top: 200px;color:#fff;
+font-size: 2rem; text-align: center;
+text-transform: uppercase;
+margin-bottom: 100px;letter-spacing:3px;}
+
+
+
+@media screen and (min-width:1366px) {
+}
+
+
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+#gnb{height: 13vw;}
+/*#gnb>ul{height: 13vw;}*/
+#gnb>ul{margin: auto;width: 85%; height: 100%;}
+#gnb li{width: 100px;
+ margin-right: 20px;}
+#gnb li:last-child{width: 120px;}
+#gnb li>a{font-size: 0.8rem;}
+}
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+  #headBox{padding-top: 80px; box-sizing: border-box;
+  margin:auto; width: 100%; height: 700px;background-color: #faa;} 
+  #logobox{width:150px; height: 35px;}
+  h1{width: 150px;height: 35px;}  
+  #headBox>h2{
+  margin-top: -400px;
+  font-size: 1.5rem;}
+  #sub{width: 100%; height: 100px;font-size: 1rem;}
+  #gnb{display: none;}
+
+
+
+  #gnb_wrap{position:relative;/*display: none;*/height: 100%;}
+  .gnb_btn{float:left; position: absolute; left: 0; top: -400px; 
+        width: 30px; height: 30px;}
+  .gnb_btn>button{position: absolute; 
+    top:-100px; left:100px;
+    z-index:2000;
+    width: 100%; height: 100%; padding: 0; transition:all 500ms ease;}
+  .icon{display: block; width: 100%; height: 4px; 
+    background-color: #fff; 
+    position: absolute; ;transition:all 500ms ease;}
+  .icon:before {content:" "; display: block; 
+  width: 100%; height: 4px; background-color: #fff;
+  position: absolute; top: -0.7rem; transition:all 500ms ease;}
+  .icon:after {content:" "; display:block; 
+   width:100%; height:4px; background-color:#fff;
+   position: absolute; bottom: -0.7rem; transition:all 500ms ease;}
+
+
+  .gnb_btn>button.active {transform:rotateY(540deg)}
+  .gnb_btn>button.active.icon{background:transparent;}
+  .gnb_btn>button.active.icon:before{transform-origin:left top; width:130%; transform:rotate(40deg);}
+  .gnb_btn>button.active.icon:after{transform-origin:left bottom; width: 130%;  transform:rotate(-40deg);}
+
+  #gnb_1{/*display: none;*/position:absolute;z-index:500;
+  top:-490px; left:0; margin-top: -100px;
+  width: 100%;height: 120%;
+  background-color:rgba(0,0,0,0.8);}
+  #gnb_1>ul{position:absolute; top:5%;
+  z-index:1000; 
+  margin: auto; width: 100%; height: 100%;}
+  #gnb_1>ul>li{margin: auto;width: 100%;height: 30px;
+  font-size: 2rem; text-transform: uppercase;
+  padding: 3rem; box-sizing: border-box; line-height:10px;
+  text-align: center;}
+  #gnb_1>ul>li>h3>a{width: 100%; height: 100%; color:#fff; font-size: 1.5rem;}
+  }
+
+
+/*mobile*/
+ @media screen and (max-width:480px){
+  #headBox{width: 100%;height: 600px;}
+  h1{margin: auto;width: 31.25vw;height: 35px; 
+ /* padding-top: 31.25vw; */box-sizing: border-box;}
+
+  /*#gnb:after{content=" "; display: block;
+    position:absolute; top:0; margin-top: 6.25vw;
+    left:0; margin-left: 2.08vw;
+    width: 10.41vw; height: 2px; background-color: #fff;}*/
+  #headBox>h2{margin-top: 30px;font-size: 1.5rem; margin-bottom: 50px;}
+  #sub{margin-top: 30px;width: 100%; height: 100px;font-size: 1rem; }
+   #gnb{position:relative; display: none;}
+  #gnb_wrap{position:relative;/*display: none;*/ height: 100%;}
+  .gnb_btn{position: absolute; left: 0; top: 70px; 
+        width: 30px; height: 30px;}
+  .gnb_btn>button{position: absolute; 
+    top:-570px; left:50px;
+    z-index:2000;
+    width: 100%; height: 100%; padding: 0; transition:all 500ms ease;}
+  .icon{display: block; width: 100%; height: 4px; 
+    background-color: #fff; 
+    position: absolute; ;transition:all 500ms ease;}
+  .icon:before {content:" "; display: block; 
+  width: 100%; height: 4px; background-color: #fff;
+  position: absolute; top: -0.7rem; transition:all 500ms ease;}
+  .icon:after {content:" "; display:block; 
+   width:100%; height:4px; background-color:#fff;
+   position: absolute; bottom: -0.7rem; transition:all 500ms ease;}
+
+
+  .gnb_btn>button:focus {transform:rotateY(540deg)}
+  .gnb_btn>button:focus .icon {background:transparent;}
+  .gnb_btn>button:focus .icon:before {transform-origin:left top; width:130%; transform:rotate(40deg);}
+  .gnb_btn>button:focus .icon:after {transform-origin:left bottom; width: 130%;  transform:rotate(-40deg);}
+
+  #gnb_1{/*display: none;*/position:absolute;z-index:500;
+  top:-450px; left:0; margin-top: -100px;
+  width: 100%;height: 120%;
+  background-color:rgba(0,0,0,0.8);}
+  #gnb_1>ul{position:absolute; top:5%;
+  z-index:1000; 
+  margin: auto; width: 100%; height: 100%;}
+  #gnb_1>ul>li{margin: auto;width: 100%;height: 30px;
+  font-size: 2rem; text-transform: uppercase;
+  padding: 3rem; box-sizing: border-box; line-height:10px;
+  text-align: center;}
+  #gnb_1>ul>li>h3>a{width: 100%; height: 100%; color:#fff; font-size: 1rem;}
+  }
+

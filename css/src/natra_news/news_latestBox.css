@@ -1,0 +1,64 @@
+/*news_latestBox.css*/
+
+.latestBox{width: 100%;height: 1100px;
+background-color: #efefef;}
+
+.latestBox>h2{padding-top: 150px;box-sizing: border-box;
+font-size: 2rem; text-align:center; text-transform: uppercase;}
+.latest{margin: auto;
+padding-top: 100px;box-sizing: border-box;
+width: 70%;height: 840px;}
+
+
+.latest>li>div{width: 100%; height: 70%; background-color: #fff;
+padding-bottom: 20px;box-sizing: border-box;}
+.latest>li>div>a{width: 100%;height: 100%;}
+.latest>li:nth-of-type(2)>div:nth-of-type(1){
+background-image: url('../../../img/cupcake.jpg');
+background-repeat: no-repeat; 
+background-position: center;
+-webkit-background-size: cover;
+background-size: cover;}
+.latest>li:nth-of-type(1)>div:nth-of-type(1){
+background-image: url('../../../img/cupcake.jpg');
+background-repeat: no-repeat; 
+background-position: center;
+-webkit-background-size: cover;
+background-size: cover;}
+.latest>li>p{font-size: 1rem; text-align: center;
+padding-bottom: 20px;box-sizing: border-box; padding-top: 20px;}
+#readBtn{margin: auto; 
+width: 60%;height: 8%;background-color: #000;}
+#readBtn>button{width: 100%;height: 150%;
+text-align:center;color:#fff; font-size: 0.8rem;
+text-transform: uppercase;}
+
+/*pcfull*/
+@media screen and(min-width:1366px){
+.latest>li{float:left;width: 45%;height: 100%;}
+.latest>li:nth-of-type(2){float:right;width: 45%;height: 100%;}
+}
+
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+ .latestBox{width: 100%;}
+ .latest{margin: auto;
+padding-top: 100px;box-sizing: border-box;
+width: 70%;height: 840px;}
+.latest>li{float:left;width: 45%;height: 100%;}
+.latest>li:nth-of-type(2){float:right;width: 45%;height: 100%;}
+ }
+ /*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+  .latest{width: 100%;height: 1300px;}
+  .latest>li{width: 100%;height: 45%;}
+  .latest>li:nth-of-type(2){padding-top:10%;
+  box-sizing:border-box;}
+ }
+ /*mobile*/
+ @media screen and (max-width:480px){
+  .latest{width: 100%;height: 1300px;}
+  .latest>li{width: 100%;height: 45%;}
+  .latest>li:nth-of-type(2){padding-top:10%;
+  box-sizing:border-box;}
+ }

@@ -1,0 +1,38 @@
+/*testimonial_quoteBox.css*/
+
+#quoteBox{padding-top: 40px; box-sizing: border-box;
+margin:auto;width: 100%; height: 600px;
+background-color: #fff;}
+
+
+
+#quote{margin: auto;
+width: 480px;height: 348px;}
+
+#quotemark1{margin-bottom: 40px;
+width: 40px;height: 40px;
+background-image: url(../../../img/q1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+-webkit-background-size: contain;
+background-size: contain;}
+#quote>p{font-size: 1rem; font-style:italic;
+text-align:center;}
+
+#quotemark2{margin-left: 440px;
+width: 40px;height: 40px;
+background-image: url(../../../img/q2.jpg);
+background-position: center;
+background-repeat: no-repeat;
+-webkit-background-size: contain;
+background-size: contain;}
+
+
+/*mobile*/
+ @media screen and (max-width:480px){
+ #quote{margin: auto;
+ width: 83.333vw;height: 348px;}	
+ #quotemark1{width: 20px;height: 20px;}
+ #quote>p{font-size: 0.8rem;}
+ #quotemark2{margin-left: 72vw;width: 20px;height: 20px;}
+ }

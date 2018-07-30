@@ -1,0 +1,151 @@
+/*whyBox*/
+
+html,body{height: 100%;}  
+ /* slide_banner_02.css */
+
+#wrap{padding-bottom: 1rem; width: 100%; height: 3000px; /*background-color: #ccc;*/}
+h1{padding: 1rem; text-align: center;}
+
+.banner{position: relative; 
+  width: 100%; height: 55vw; /*background-color: #faa*/}
+  /* .indicator=================================== */
+
+
+  .slide_btn{
+    position: absolute; top: 50%; left: 0; 
+    margin-top: -2rem;
+    width: 100%; height:0; float: left; }
+  .slide_btn>button{cursor: pointer; float: left;
+     width:7rem; height: 7rem; color:#fff; /*background-color:rgba(10,10,10,0.7)*/;}
+  .slide_btn>button:last-of-type{float: right;}
+
+  .slide_btn>.prev_btn:after{content:"<"; color:#343434; font-size: 6rem; }
+  .slide_btn>.next_btn:after{content:">"; color:#343434; font-size: 6rem; }
+
+  .btn{
+    position: absolute; bottom:1rem; right:50%; z-index: 150;
+    margin-right:-72px;
+    box-sizing:border-box; padding: 1rem 2rem;
+    width: auto; height:auto; /*background-color: #171717
+    /*border-radius:3rem;*/}
+  .indicator{width: auto; height: auto; float:left;}
+  .indicator>li{
+    margin-right: 1rem; float: left;
+    box-sizing:border-box;
+    border:3px solid #343434;
+    width: 1rem; height: 1rem; background-color:#343434;
+    border-radius:0.75rem;
+    }
+  .indicator>li:last-child{margin-right: 0;}
+
+  .indicator>li.active{background-color: inherit;}
+
+  /* .banner=================================== */
+  .banner_box{margin: auto;width: 100%; height:100%; overflow: hidden; }
+  .banner_01{
+  background-image:url('../../img/skyjpg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  .banner_02{
+  background-image:url('../../img/8db2dab697ca7d3206eff183be8fcac2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  .banner_03{background-image:url('../../img/kinfolk-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  .banner_04{background-image:url('../../img/kinfolk-woodnote-blog-141.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+
+
+  /* 1차: 같은자리에 광고배너 겹칠경우 */
+  /*.banner_wrap{position: relative; width: 100%; height: 100%;}
+  .banner_wrap>div{
+    position: absolute; top: 0; left: 0; z-index:50;
+    width: 100%; height: 100%; }
+  .banner_wrap>div.active{z-index: 100;}*/
+
+  /* 2차: 슬라이드 배너가 가로로 정렬되어 있는경우.(문제1) */
+  .banner_wrap{width:calc(100% * 4); height: 100%;}
+  .banner_wrap>div{width:calc(100% / 4); height: 100%; float:left; 
+    /*font-size: 3rem; color:#fff;*/ box-sizing: border-box;}
+  .banner_wrap>div>p{color:#000;margin: auto; text-align:center;
+    box-sizing: border-box;}
+
+  .learnBtn{margin: auto;
+  text-transform: uppercase;
+  width: 300px;height: 80px; 
+  background-color: transparent;
+  border:1px solid #000;}
+  
+  .learnBtn>button{margin: auto;
+  width: 100%; height: 100%;
+  text-align:center; color:#000; text-transform: uppercase;}
+
+  .learnBtn:hover,
+  .learnBtn:focus
+  {background-color: #343434; transition: all 300ms ease;}
+
+  .learnBtn>button:hover,
+  .learnBtn>button:focus
+  {color:#fff;}
+
+
+
+/*pcfull*/
+
+@media screen and (min-width:1365px) {
+  .banner_wrap>div>p:nth-of-type(1){padding-top: 300px; font-size: 2.5rem;}
+  .banner_wrap>div>p:nth-of-type(2){padding-top: 50px;font-size: 1.2rem;
+    padding-bottom: 50px;}
+
+}
+
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+  .banner_wrap>div>p:nth-of-type(1){padding-top: 14.6vw; font-size: 2.5rem;}
+  .banner_wrap>div>p:nth-of-type(2){padding-top: 3.6vw;font-size: 1.2rem;
+    padding-bottom: 5.12vw;}
+  .slide_btn>.prev_btn:after{font-size: 3rem; }
+  .slide_btn>.next_btn:after{font-size: 3rem; }
+  }
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+  .banner{height: 70vw;}
+  .banner_wrap>div>p:nth-of-type(1){padding-top: 20vw; font-size: 1.5rem;}
+  .banner_wrap>div>p:nth-of-type(2){padding-top: 3.6vw;font-size: 1rem;
+    padding-bottom: 10vw;}
+  .learnBtn{width: 200px;height: 50px;}
+  .slide_btn>button{width:3rem; height: 3rem;}
+  .slide_btn>.prev_btn:after{font-size: 2rem; }
+  .slide_btn>.next_btn:after{font-size: 2rem; }
+  }
+
+/*mobile*/
+ @media screen and (max-width:480px){
+  .banner{height: 100vw;}
+  .banner_wrap>div>p:nth-of-type(1){padding-top: 30vw; font-size: 1.2rem;}
+  .banner_wrap>div>p:nth-of-type(2){padding-top: 3.6vw;font-size: 0.8rem;
+    padding-bottom: 10vw;}
+  .learnBtn>button{font-size: 0.8rem;}
+  .learnBtn{width: 150px;height: 50px;}
+
+  .slide_btn{margin-top: 0rem;}
+  .slide_btn>button{width:2rem; height: 2rem;}
+  .slide_btn>.prev_btn:after{font-size: 1.5rem; }
+  .slide_btn>.next_btn:after{font-size: 1.5rem; }
+
+  }
+
+
+
+

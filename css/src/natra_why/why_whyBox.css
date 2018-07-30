@@ -1,0 +1,99 @@
+#whyBox{padding-top: 250px;box-sizing:border-box;
+width: 100%;height: 1000px;
+background-color: #ededed;}
+
+#icon{margin: auto;
+width: 100px;height: 50px;
+background-image: url(../../../img/img_40103.png);
+background-repeat: no-repeat;
+background-position: center
+-webkit-background-size: contain;
+background-size: contain;}
+
+#whyBox>h2{margin: auto;
+padding-top: 90px;box-sizing:border-box;
+text-align: center; text-transform:uppercase;
+font-size:3rem; color:#000;}
+
+#whyBox>p{margin: auto;
+padding-top: 82px;box-sizing:border-box;
+text-align: center; text-transform:uppercase;
+font-size:1rem; color:#000;
+line-height: 200%;}
+
+#btn{margin: auto;
+padding-top: 90px;box-sizing:border-box;
+width: 630px;height: 90px;}
+
+#findbtn{float:left; margin-right: 30px;
+width: 300px; height: 90px;
+background-color: #000; 
+font-size: 1rem; text-align:center;
+color:#fff; text-transform:uppercase;}
+#findbtn:hover,
+#findbtn:focus{background-color: #fff;border:1px solid #000;
+color:#000;}
+#findbtn>a{display: block;
+margin: auto;
+width: 100%;height: 100%;}
+
+
+#trybtn{float:left; width: 300px; height: 90px;
+background-color: #fff; border:1px solid #000;
+font-size: 1rem; text-align:center;
+color:#000; text-transform:uppercase;}
+#trybtn:hover,
+#trybtn:focus{background-color: #000;color:#fff;}
+#trybtn>a{display: block;
+margin: auto;
+width: 100%;height: 100%;}
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+ #whyBox>h2{margin: auto;
+font-size:2rem;}
+
+#btn{margin: auto;
+padding-top: 90px;box-sizing:border-box;
+width: 430px;height: 60px;}
+
+#findbtn{float:left; margin-right: 30px;
+width: 200px; height: 60px;
+background-color: #000; 
+font-size: 1rem; text-align:center;
+color:#fff; text-transform:uppercase;}
+
+#trybtn{float:left; width: 200px; height: 60px;
+background-color: #fff; border:1px solid #000;
+font-size: 1rem; text-align:center;
+color:#000; text-transform:uppercase;}
+ }
+
+/*mobile*/
+ @media screen and (max-width:480px){
+#whyBox{padding-top: 100px;
+height: 600px;}
+#whyBox>h2{margin: auto; padding-top: 50px;
+font-size:2rem;}
+
+#whyBox>p{padding-top: 30px;font-size:0.7rem;}
+
+#btn{margin: auto;
+padding-top: 90px;box-sizing:border-box;
+width: 330px;height: 60px;}
+
+#findbtn{float:left; margin-right: 30px;
+width: 150px; height: 60px;
+background-color: #000; 
+font-size: 0.7rem; text-align:center;
+color:#fff; text-transform:uppercase;}
+
+#trybtn{float:left; width: 150px; height: 60px;
+background-color: #fff; border:1px solid #000;
+font-size: 0.7rem; text-align:center;
+color:#000; text-transform:uppercase;}
+ }
+
+
+
+

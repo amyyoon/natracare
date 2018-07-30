@@ -1,0 +1,96 @@
+html,body{height: 100%;}  
+
+#bannerBox {padding-top: 100px;box-sizing: border-box;
+  width: 100%; height: 400px;
+  background-image: url('../../img/tree_05.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+
+#bannerBox>h2{margin: auto;
+margin-bottom: 30px;
+color:#fff; text-transform: uppercase;
+text-align: center;}
+
+#bannerBox>h3{margin: auto;
+color:#fff; margin-top: 50px;
+text-align: center; line-height: 3px;}
+
+#explore{margin: auto;
+width: 300px;height: 80px; 
+background-color: transparent;
+border:1px solid #fff;}
+#explore>a>p{text-transform: uppercase;}
+#explore>a{display: block;width: 100%; height: 100%;}
+
+#explore:hover{border:3px solid #fff;}
+#explore>a>p:hover{font-weight: bold;}
+
+
+
+/*pcfull*/
+ @media screen and (min-width:1366px) {
+  #bannerBox>h2{margin: auto;
+margin-bottom: 50px;
+color:#fff; text-transform: uppercase;
+text-align: center; line-height: 3px;}
+
+  #explore{
+width: 21.96vw;height: 80px; margin-top: 50px;}
+#explore>a>p{margin: auto; margin-top: 30px;
+color:#fff; font-size: 1rem; text-align:center;
+text-transform:uppercase;}
+
+#bannerBox>h2{line-height: 3px;}
+ }
+
+
+/*latop*/
+ @media screen and (min-width:768px) and (max-width:1365px) {
+#explore{ margin-top: 100px;
+width: 21.96vw;height: 80px;
+background-color: transparent;
+border:1px solid #fff;}
+
+#explore>a>p{margin: auto; margin-top: 30px;color:#fff; font-size: 1rem; text-align:center;text-transform:capitalize;}
+
+
+#bannerBox>h2{line-height: 3px;}
+ }
+/*tablet*/
+@media screen and (min-width:481px) and (max-width:767px){
+#bannerBox {padding-top: 80px;box-sizing: border-box;
+  width: 100%; height: 300px;}
+#explore{margin: auto;margin-top: 30px;
+width: 30vw;height: 50px;
+background-color: transparent;
+border:1px solid #fff;}
+
+#explore>a>p{margin: auto; color:#fff; font-size: 0.8rem; 
+text-align:center;text-transform:capitalize; padding:1rem; 
+box-sizing: border-box;}
+
+#bannerBox>h2 {font-size: 1.5rem;}
+#bannerBox>h3 {font-size: 1rem;line-height: 20px;}
+ }
+
+
+/*mobile*/
+ @media screen and (max-width:480px){
+#bannerBox{padding-top: 100px;box-sizing: border-box;
+height: 300px;}
+#explore{margin-top: 40px;
+width: 100px;height: 40px;
+background-color: transparent;
+border:1px solid #fff;}
+
+#explore>a>p{margin: auto; margin-top: 10px;
+color:#fff; font-size: 0.8rem; text-align:center;
+text-transform:capitalize;}
+
+#bannerBox>h2 {font-size: 1rem;line-height: 20px;margin-bottom: 10px;}
+#bannerBox>h3 {font-size: 0.8rem;line-height: 20px;margin-top: 20px;}
+ }
+
+ 

@@ -1,0 +1,65 @@
+/* main_headBox.css */
+
+#wrap{width: 100%; height: 100%; background-color: #cfcfcf;}
+
+#headBox{position: fixed; top: 0; left: 0; z-index: 1000; 
+        box-sizing:border-box; padding:1rem; 
+        width: 100%; height: 150px; background-color: #000;}
+#headBox>h1{margin: auto; width: 150px; height: 50px;
+background-color: #aca;
+/*background-image: url('../../../img/zbrush_logo.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+-webkit-background-size: contain;
+background-size: contain;*/}
+#headBox>h1>a{display: block; width: 100%; height: 100%;}
+
+
+
+/**/
+.gnb_wrap{position: relative; margin-top: 0.5rem; width: 100%; height: auto;}
+.gnb_btn{position: absolute; left: 0; top: -3rem; 
+        width: 2.5rem; height: 2.5rem;}
+.gnb_btn>button{width: 100%; height: 100%; padding: 0; transition:all 500ms ease;}
+.icon{display: block; width: 100%; height: 4px; background-color: #fff; 
+      position: relative; transition:all 500ms ease;}
+.icon:before {content:" "; display: block; 
+              width: 100%; height: 4px; background-color: #fff;
+              position: absolute; top: -1rem; transition:all 500ms ease;}
+.icon:after {content:" "; display:block; 
+            width:100%; height:4px; background-color:#fff;
+            position: absolute; bottom: -1rem; transition:all 500ms ease;}
+
+.gnb_btn>button.active {transform:rotateY(540deg)}
+.gnb_btn>button.active .icon{background:transparent;}
+.gnb_btn>button.active .icon:before{transform-origin:left top; width:130%; transform:rotate(40deg);}
+.gnb_btn>button.active .icon:after{transform-origin:left bottom; width: 130%;  transform:rotate(-40deg);}
+
+#gnb{width: 30%; height: auto; background-color: #acc;}
+#gnb>ul{width: 100%; height:600px; background-color: rgba(100,100,10,0.5);}
+#gnb>ul>li{/*margin-bottom: 5%;  */width: 100%; height: 20%; background-color: #fff;}
+#gnb>ul>li:last-child{margin-right: 0; }
+#gnb>ul>li>a{display: block; width: 100%; padding-top: 3rem; 
+text-align: center; font-size: 1rem; 
+text-transform:uppercase;}
+
+
+
+/* 기능을 주었다가 해제하는경우
+ floal:?; -> float:none;
+ position:?; -> position:static;
+ font-size, font-weight...font... -> normal
+ margin, padding, top, bottom -> auto
+*/
+
+@media screen and (max-width: 480px) {
+  #gnb>ul{width: 100%; height: auto; }
+  #gnb>ul>li{float:none; width: 100%; height: 100px; }
+
+}
+/*@media screen and (min-width: 481px) and (max-width: 767px) {}
+@media screen and (min-width: 768px) and (max-width: 1365px) {}*/
+
+@media screen and (min-width: 1366px) {
+  .gnb_btn{display: none;}
+}

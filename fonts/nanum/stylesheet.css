@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('hinted-NanumBarunGothicLight.eot');
+    src: url('hinted-NanumBarunGothicLight.eot?#iefix') format('embedded-opentype'),
+        url('hinted-NanumBarunGothicLight.woff2') format('woff2'),
+        url('hinted-NanumBarunGothicLight.woff') format('woff'),
+        url('hinted-NanumBarunGothicLight.ttf') format('truetype'),
+        url('hinted-NanumBarunGothicLight.svg#NanumBarunGothicLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('hinted-NanumBarunGothicUltraLight.eot');
+    src: url('hinted-NanumBarunGothicUltraLight.eot?#iefix') format('embedded-opentype'),
+        url('hinted-NanumBarunGothicUltraLight.woff2') format('woff2'),
+        url('hinted-NanumBarunGothicUltraLight.woff') format('woff'),
+        url('hinted-NanumBarunGothicUltraLight.ttf') format('truetype'),
+        url('hinted-NanumBarunGothicUltraLight.svg#NanumBarunGothicUltraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('hinted-NanumBarunGothic.eot');
+    src: url('hinted-NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-NanumBarunGothic.woff2') format('woff2'),
+        url('hinted-NanumBarunGothic.woff') format('woff'),
+        url('hinted-NanumBarunGothic.ttf') format('truetype'),
+        url('hinted-NanumBarunGothic.svg#NanumBarunGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('hinted-NanumBarunGothicBold.eot');
+    src: url('hinted-NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-NanumBarunGothicBold.woff2') format('woff2'),
+        url('hinted-NanumBarunGothicBold.woff') format('woff'),
+        url('hinted-NanumBarunGothicBold.ttf') format('truetype'),
+        url('hinted-NanumBarunGothicBold.svg#NanumBarunGothicBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

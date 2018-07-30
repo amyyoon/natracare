@@ -1,0 +1,93 @@
+/*testimonial_contactBox.css*/
+#contactBox{padding-top: 160px;box-sizing: border-box;
+width: 100%;height: 1300px; background-image:url('../../../img/sky2.jpg');
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+background-size: cover;}
+
+#contactBox>p:first-child{margin: auto; 
+line-height: 200%;
+text-align:center;font-size: 3rem;}
+#contactBox>p:nth-of-type(2){
+padding-top: 30px; box-sizing: border-box;
+margin: auto; 
+text-align:center;font-size: 1rem;}
+.contact{padding-top: 100px; box-sizing: border-box;
+margin: auto; border:0;
+height: 700px; background-color: transparent;}
+.name>input{float:left;height: 50px;
+background-color: #fff; margin-right: 38px;border:0;}
+
+
+.email>input{float:left;height: 50px;
+background-color: #fff;border:0;}
+
+.title>input{margin-top: 46px;height: 50px;
+background-color: #fff;border:0;}
+
+.msg>input{margin-top: 46px;
+height: 400px;
+background-color: #fff;border:0;
+box-sizing: border-box;}
+
+.msg{padding-bottom: 80px;}
+#send_btn{display: block;
+margin-top: 80px;
+margin: auto;width: 340px;height: 80px;
+font-size: 1rem; text-transform: uppercase;
+background-color: transparent; 
+border:1px solid #000;}
+
+#send_btn:hover,
+#send_btn:focus{background-color:#475F91; 
+color:#fff;
+border:0;
+transition: all 300ms ease;}
+
+
+/*pcfull*/
+@media screen and (min-width:1366px){
+ .contact{width: 950px; height: 700px;}
+ .name>input{width: 450px;}
+ .email>input{width: 450px;}
+ .title>input{width:950px;}
+ .msg>input{width: 950px;}
+ #send_btn{width: 340px;height: 80px;}
+}
+
+/*laptop*/
+@media screen and (min-width:768px) and (max-width:1365px){
+#contactBox>p:first-child{font-size: 2rem;}
+#contactBox>p:nth-of-type(2){font-size: 1rem;}
+ .contact{width: 700px; height: 700px;}
+ .name>input{width: 340px; margin-right: 20px;}
+ .email>input{width: 340px;}
+ .title>input{width:700px;}
+ .msg>input{width: 700px;}
+ #send_btn{width: 200px;height: 50px;}
+}
+
+ /*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+#contactBox>p:first-child{font-size: 2rem;}
+#contactBox>p:nth-of-type(2){font-size: 1rem;}
+ .contact{width: 480px; height: 700px;}
+ .name>input{width: 230px; margin-right: 20px;}
+ .email>input{width: 230px;}
+ .title>input{width:480px;}
+ .msg>input{width: 480px;}
+ #send_btn{width: 150px;height: 50px;}
+ }
+
+/*mobile*/
+ @media screen and (max-width:480px){
+ #contactBox>p:first-child{font-size: 1rem;}
+#contactBox>p:nth-of-type(2){font-size: 0.8rem;}
+ .contact{width: 100%; height: 700px;}
+ .name>input{width:47%; margin-right:6% ;}
+ .email>input{width: 47%;}
+ .title>input{width:100%;}
+ .msg>input{width: 100%;}
+ #send_btn{width: 150px;height: 50px;}
+ }

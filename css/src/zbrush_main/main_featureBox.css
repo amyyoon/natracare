@@ -1,0 +1,48 @@
+/*main_feature.css*/
+
+#featureBox{padding-top: 300px; box-sizing:border-box;
+width: 100%;height: 1400px;
+background-color: #efefef;}
+
+#featureBox>h2{margin: auto;text-align:center;
+font-size:3rem; padding-bottom: 50px; box-sizing:border-box;}
+
+#featureBox>h2>a{width: 100%;height: 100%;}
+
+.featureList{
+margin: auto;
+width: 70%;height: 800px;}
+
+.featureList>li>a{margin: auto;display: block;width: 100%;height: 100%;}
+
+.featureList>li:nth-of-type(1){float:left;
+width: 47%;height: 45%;
+margin-right: 6%;margin-bottom: 5%;background-color: #fff;}
+
+.featureList>li:nth-of-type(2){float:right; 
+width: 47%;height: 98%;
+background-color: #fff;}
+
+.featureList>li:nth-of-type(3){float:left;
+width: 47%;height: 50%; 
+margin-right: 6%;background-color: #fff;}
+
+.featureList>li>a>p{padding-top: 50%; box-sizing:border-box;
+font-size: 1rem; text-align:center; padding-bottom: 10px;}
+.featureList>li:nth-of-type(2)>a>p{padding-top: 100%; box-sizing:border-box;
+font-size: 1rem; text-align:center;}
+
+
+.featureList>li>a>button{display: block;
+margin: auto; 
+width: 80%;height: 1px;
+background-color: #000;
+}
+
+.featureList>li:hover
+{background-color: rgba(0,0,0,0.6);}
+
+
+
+
+

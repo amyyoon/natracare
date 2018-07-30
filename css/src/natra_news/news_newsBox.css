@@ -1,0 +1,181 @@
+/*news_newsBox.css*/
+
+
+/*newsBox*/
+
+html,body{height: 100%;}  
+
+
+
+#newsBox{margin:auto;
+width: 100%; height: 800px; background-color: #F2F1ED;}
+#newsBox>h2{padding:100px 0px;
+box-sizing: border-box;
+margin-bottom: 00px;
+color:#000; text-align: center;
+font-size: 2rem; 
+text-transform: uppercase;letter-spacing:3px;}
+
+#newsBox>ul{padding: 0 40px; box-sizing:border-box;
+margin:auto;width: 800px; height: 500px;}
+#newsBox>ul>li{
+  position:relative;
+  margin:auto;
+  float:left; margin: 10px;
+  width: 210px; height: 210px; background-color: #fff;
+  background-image: url('../../img/news2.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;}
+
+#newsBox>ul>li:nth-child(2){
+  background-image: url('../../img/news3.png')
+  background-position:center;
+  background-size: cover;
+}
+
+#newsBox>ul>li:nth-child(3){
+  background-image: url('../../img/news1.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+#newsBox>ul>li:nth-child(4){
+  background-image: url('../../img/ethical-fashion2.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+#newsBox>ul>li:nth-child(5){
+  background-image: url('../../img/news.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+#newsBox>ul>li:nth-child(6){
+  background-image: url('../../img/water-day-copy.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+#newsBox>ul>li>span{position:absolute; bottom:0; z-index:50;
+text-align: center; box-sizing:border-box; padding-top: 1rem;
+width: 100%; height: 30%; background-color:rgba(255,255,255,0.8);}
+
+
+
+
+#newsBox>ul>li>a{position:absolute; top:0; left:0; z-index:100; 
+  font-weight: 500; 
+  display: block; width: 100%; height: 100%; transition:all 300ms ease;}
+
+#newsBox>ul>li>a>span{display: block;
+  position: absolute; left: 0; bottom: 0; padding-top: 1rem; padding-bottom: 1rem;
+  width: 100%; height:auto; background-color:rgba(255,255,255,0.8);
+  text-align: center; text-transform: capitalize; transition:all 300ms ease;}
+
+#newsBox>ul>li>a:hover,
+#newsBox>ul>li>a:focus{background-color:rgba(0,0,0,0.7);}
+
+#newsBox>ul>li>a:hover:after,
+#newsBox>ul>li>a:focus:after{content:"read more"; display: block;
+  text-transform: uppercase; color:#fff; width: 80%; height: 80%; 
+  text-align:center; line-height:168px;
+  border:1px solid #fff; position: absolute; top: 10%; left: 10%; z-index: 200; }
+#newsBox>ul>li>a:hover + span {display: none;}
+
+#newsBox>ul>li>a:hover>span,
+#newsBox>ul>li>a:focus>span{ height: 0; overflow: hidden; padding: 0;}
+
+
+/*#newsBox>ul>li:hover>a{background-color: rgba(0,0,0,0.7)}
+#newsBox>ul>li:after:hover{content=" "; display: block;
+width: 80%; height: 80%; border:1px solid #fff;}*/
+
+
+/*#newsBox>ul>li>a {
+display: block;
+color:#000; font-size: 0.8rem;
+text-align: center;
+width: 100%;height: 100%;}
+*/
+/*#newsBox>ul>li>a>div {width:100%; height: 70%;
+  margin-bottom: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+*/
+
+
+/*latop*/
+ @media screen and (max-width:768px) and (min-width:1365px) {
+  #newsBox{padding:19.53vw; box-sizing:border-box;
+  margin:auto;width: 100%; height: 1500px; background-color: #ffa;}
+  #newsBox>ul{padding:1.46vw; box-sizing:border-box;
+  margin:auto; width: 150%; height: 500px;}
+  #newsBox>ul>li{margin:auto;
+  float:left; margin: 0.7vw;
+  width: 150%; height: 210px; background-color: #fff;}
+
+  #newsBox>ul>li>a {color:#000; font-size: 0.8rem;
+  text-align: center;
+  width: 100%; height: 100%;}
+  #newsBox>ul>li>div {width:100%; height: 70%;
+  background-image: url('../../img/main/Rectangle 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
+
+/*tablet*/
+ @media screen and (min-width:481px) and (max-width:767px){
+  #newsBox{padding:1%; box-sizing:border-box;
+  margin:auto;width: 100%; /*height: 1000px;*/ background-color: #F2F1ED;}
+  #newsBox>h2{color:#000; padding:70px 0px;
+  font-size: 1.5rem; text-align:center;}
+  #newsBox>ul{padding:0.5%; box-sizing:border-box;
+  margin:auto; width: 100%; height: 500px;}
+  #newsBox>ul>li{margin:auto;
+  margin: 1%;
+  width: 48%; height: 210px; background-color: #fff;}
+
+  #newsBox>ul>li>a {color:#000; font-size: 0.8rem;
+  text-align: center;
+  width: 100%;height: 100%;}
+  #newsBox>ul>li>div {width:100%; height: 70%;
+  background-image: url('../../img/main/Rectangle 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+
+  }
+
+/*mobile*/
+ @media screen and (max-width:480px){
+  #newsBox{padding:1.04vw; box-sizing:border-box;
+  margin:auto;width: 100%; height: 1500px; background-color: #F2F1ED;}
+  #newsBox>h2{color:#000;padding:50px 0px;
+  font-size: 1.5rem; text-align:center;
+  margin-top: 1vw;}
+  #newsBox>ul{padding:0;
+  margin:auto; width: 100%; height: auto;}
+  #newsBox>ul>li{margin:auto;
+  width: 100%; height: 210px; background-color: #fff;
+  margin-bottom: 2%;}
+
+
+  #newsBox>ul>li>a {font:#000; font-size: 0.8rem;
+  text-align: center;
+  width: 100%;height: 100%;}
+  #newsBox>ul>li>div {width:100%; height: 70%;
+  background-image: url('../../img/main/Rectangle 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;}
+  }
